@@ -1,0 +1,167 @@
+.hexagon { 
+    position: absolute; 
+    margin: 0 auto; 
+    background-color:rgb(148, 133, 133); 
+    border-radius: 10px; 
+    width: 100px; 
+    height: 63px; 
+    box-sizing: border-box; 
+    transition: all 1s; 
+    border: 0.4vh solid transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.hexagon:hover{
+    
+    background-color: white;
+    
+}
+
+
+/* Creating pseudo-class */
+.hexagon:before, .hexagon:after { 
+    content: ""; 
+    border: inherit; 
+    position: absolute; 
+    top: -0.4vh; 
+    left: -0.3vh; 
+    background-color: rgb(148, 133, 133); 
+    border-radius: inherit; 
+    height: 63px; 
+    width: 100px; 
+} 
+
+/* Align them in such a way 
+that they form a hexagon */
+.hexagon:before { 
+    transform: rotate(60deg); 
+} 
+.hexagon:after { 
+    transform: rotate(-60deg); 
+} 
+.about{
+    position: inherit;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color:white;
+    
+}
+.div{
+    cursor: pointer;
+    background-color: white;
+    width:150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    
+    position:relative;
+}
+.lefttop{
+    position:absolute;
+    top:-46px;
+    left:-26px;
+}
+.righttop{
+    position:absolute;
+    top:-46px;
+}
+.bottomright{
+    position:absolute;
+    top:132px;   
+}
+.bottomleft{
+    position:absolute;
+    top:132px; 
+    left:-26px;
+}
+.right{
+    position:absolute;
+    top:43px;
+    right:23px;
+}
+.righht{
+    position:absolute;
+    top:-46px;
+    right:-29px;
+}
+.left{
+    position:absolute;
+    top:44px;
+    left:-78px;
+}
+.lefft{
+    position:absolute;
+    bottom:-70px;
+    left:-80px;
+}
+.fullscreen{
+    position:fixed;
+    top:30px;
+    bottom:30px;
+    right:20px;
+    left:20px;
+    background-color:rgba(255, 255, 255, 0.952);
+    z-index:500;
+    border-radius: 10px;
+    overflow: auto;
+    padding:20px;
+    border-style: solid;
+    border-width:1px;
+    border-style: solid;
+    border-color:rgba(226, 226, 226, 0.911);
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.15);
+}
+.x{
+    background-color: white;
+    width:30px;
+    height:30px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width:1px;
+    border-style: solid;
+    border-color:rgba(226, 226, 226, 0.98);
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+    border-radius: 50px;
+}
+.xx{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+.title{
+    font-family:arial;
+    font-size:14px;
+    font-weight:bold;
+    color:rgb(127, 21, 21);
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.paragraph{
+    
+    display:inline-block;
+    padding:10px;
+    border-style:solid;
+    border-right-width:4px;
+    border-left-width:4px;
+    border-top-width:1px;
+    border-bottom-width:1px;
+    border-left-color: rgb(127, 21, 21);
+    border-right-color: rgb(127, 21, 21);
+    border-top-color:white;
+    border-bottom-color:white;
+    border-radius:10px;
+    padding-right:20px;
+    padding-left:20px;
+    background-color: rgba(245, 245, 245, 0.48);
+}
